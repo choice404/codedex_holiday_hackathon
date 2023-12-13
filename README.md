@@ -1,5 +1,6 @@
 # CODEDEX HOLIDAY HACKATHON
 
+![Title Screen](./readme_assets/title_screen.gif)
 
 ## Table of Contents
 * [Project description](#project-description)
@@ -7,9 +8,13 @@
 
 ##   Project description
 
-Project for the Codedex Holiday Hackathon by (team name tbd)!!!
+Project for the Codedex Holiday Hackathon by faLALALA!!!
+Members:
+Austin
+Hannah
+Yaz
 
-This program is under the "License TBD"
+This program is under the GNU General Public License v3.0
 
 ##   Install program
 
