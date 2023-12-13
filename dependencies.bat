@@ -3,7 +3,7 @@
 REM This script is used to install the dependencies for the program
 
 REM Packages to install
-set packages=
+set packages=windows-curses, colored
 
 REM Check if python3 is already installed
 where python3 >nul 2>nul

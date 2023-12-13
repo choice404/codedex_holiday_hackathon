@@ -3,7 +3,7 @@
 # This script is used to install the dependencies for the program
 
 # Packages to install
-packages=()
+packages=('curses')
 
 # Install Python 3 according to the operating system
 operatingSystem=$(uname -s)
