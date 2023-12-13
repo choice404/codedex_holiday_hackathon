@@ -82,6 +82,60 @@ to be defeated before he ruins Christmas!
 Look around the North Pole to fix the toys and to do other tasks!"
         """,
         ]),
+        scenes.Scene('Backstory', _window, [], text=[
+    """
+You walk into the dark cave and run into something and fluffy.
+
+Herbert: Well aren't you a cute little one.. You're a long way from Santa's workshop.
+Shouldn't you be helping them make some new toys so they have them in time for Christmas?
+Why are you here?
+...
+Well, nobody's ever asked me that question before... 
+I didn't always hate Christmas, ya know...
+    """,
+    """
+Herbert: I used to enjoy Christmas, like any other polar bear.
+Back when I was a cub, I used to love spending time with my penguin friends.
+One day, they went to a monastary and started learning Card Jitsu. 
+These ninja penguins weren't allowed to talk with those who weren't studying at the Dojo.
+
+Since I can't see my old friends, Christmas has never been the same.
+Every year, I wake up and run to check if they sent me a message or a present for Christmas, only to find the mailbox empty.
+Why should everyone else have a good Christmas if I can't have one?
+    """
+        ]),
+        scenes.Scene('Workshop', _window, [], text=[
+    """
+You see a large set of wooden, double doors. You turn the gold handle and when you open the door, you can hardly believe your eyes.
+In the center of the room is the largest Christmas tree you have ever seen, filled with so many colored ornaments and decorations.
+Directly under the Christmas tree, there are multiple workshop benches. Each elf is diligently working on constructing and inspecting their toy.
+You are about to take a step forward, but an elf with a clip board stops you.
+    """
+        ]),
+        scenes.Scene('Neighborhood', _window, [], text=[
+        """
+When you reach the top of the giant snow covered hill, you look down and see a small cluster of houses.
+As you walk down the hill, you see a group of elves making snowmen and making snow angels. 
+One elf walks up to you and asks if you want to join.
+        """    
+        ]),
+        scenes.Scene('Santa\'s House', _window, [], text=[
+        """
+When you open the door, you are greeted with a warm feeling that you've never experienced before. 
+You look to your left and that the wood fireplace is lit. Mrs. Claus is sitting in the chair right next to it, reading a Christmas Story.
+She looks up and sees you standing in the doorway. She stands up and walks over to you.
+
+Mrs. Claus: Hello, sweetie. Did you come to take a break from making toys?
+        """ 
+        ]),
+        scenes.Scene('Stables', _window, [], text=[
+        """
+You walk outside Santa\'s house and see a a Stable. You decide to walk over and check it out.
+When you open the stable door, it's so dark you can't even see in front of your hand.
+You are just about to turn around and walk back outside when you see a faint red light shining brightly in the distance.
+You take one step in front of another, walking closer to the light, in hopes of discovering its original source.
+        """
+        ]),
     ]
     _scenes_map = {
             "Title": 0,
@@ -89,6 +143,11 @@ Look around the North Pole to fix the toys and to do other tasks!"
             "Credits": 2,
             "Menu": 3,
             "Start": 4,
+            "Backstory": 5,
+            "Workshop": 6,
+            "Neighborhood": 7,
+            "Santa's House": 8,
+            "Stables": 9,
     }
     _menu = menu.Menu(_window, 'a', 'd')
     _menu.append_menu_map('Title', ['Start', 'Help', 'Credits', 'Exit'])
