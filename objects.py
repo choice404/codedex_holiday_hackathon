@@ -119,7 +119,7 @@ As you walk down the hill, you see a group of elves making snowmen and making sn
 One elf walks up to you and asks if you want to join.
         """    
         ]),
-        scenes.Scene('Santa\'s House', _window, [], text=[
+        scenes.Scene('House', _window, [], text=[
         """
 When you open the door, you are greeted with a warm feeling that you've never experienced before. 
 You look to your left and that the wood fireplace is lit. Mrs. Claus is sitting in the chair right next to it, reading a Christmas Story.
@@ -136,6 +136,15 @@ You are just about to turn around and walk back outside when you see a faint red
 You take one step in front of another, walking closer to the light, in hopes of discovering its original source.
         """
         ]),
+         scenes.Scene('Kitchen', _window, [], text=[
+        """
+After talking with Mrs. Claus, you are greeted with the smell of freshly baked cookies.
+You walk over to the counter and see a plate of different types of cookies.
+Of course, there is Chocolate Chip cookies. A Christmas Classic!
+You see some sugar cookies, snickerdoodles, oatmeal raisin cookies, lady locks, and gingersnap cookies.
+
+        """
+        ]),
     ]
     _scenes_map = {
             "Title": 0,
@@ -146,8 +155,9 @@ You take one step in front of another, walking closer to the light, in hopes of 
             "Backstory": 5,
             "Workshop": 6,
             "Neighborhood": 7,
-            "Santa's House": 8,
+            "House": 8,
             "Stables": 9,
+            "Kitchen": 10
     }
     _menu = menu.Menu(_window, 'a', 'd')
     _menu.append_menu_map('Title', ['Start', 'Help', 'Credits', 'Exit'])
