@@ -147,7 +147,7 @@ You see some sugar cookies, snickerdoodles, oatmeal raisin cookies, lady locks, 
         ]),
          scenes.Scene('Back', _window, [], text=[
         """
-This is the back menu.
+This is the back menu. This is an edit.
 
         """
         ]),
