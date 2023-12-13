@@ -21,7 +21,7 @@
 # Nice Route: If certain amount of nice points, convince the villain to join you and save Xmas.
 
 
-class NaughtyorNiceGame:
+class NaughtyOrNiceGame:
     def __init__(self):
         self._morality_tracker = 0
         self._nice_tracker = 0
