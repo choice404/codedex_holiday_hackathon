@@ -9,9 +9,13 @@
 ##   Project description
 
 Project for the Codedex Holiday Hackathon by faLALALA!!!
+
 Members:
+
 Austin
+
 Hannah
+
 Yaz
 
 This program is under the GNU General Public License v3.0
