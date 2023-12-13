@@ -100,5 +100,5 @@ class NaughtyOrNiceGame:
 
 
 # Instantiate the game and run it
-morality_tracking_game = NaughtyorNiceGame()
+morality_tracking_game = NaughtyOrNiceGame()
 morality_tracking_game.run_game()
