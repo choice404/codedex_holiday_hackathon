@@ -94,30 +94,49 @@ Look around the North Pole to fix the toys and to do other tasks!"
     _menu.append_menu_map('Title', ['Start', 'Help', 'Credits', 'Exit'])
     _menu.append_menu_map('Help', ['Back'])
     _menu.append_menu_map('Credits', ['Back'])
-    _menu.append_menu_map('Start', ['Interact', 'Move', 'Inventory', 'Menu'])
-    _menu.append_menu_map('General', ['Interact', 'Inventory', 'Menu', 'Back'])
-    _menu.append_menu_map('Start', ['Interact', 'Move', 'Inventory', 'Menu', 'Back', 'Exit'])
+    _menu.append_menu_map('Start', ['Interact', 'Move', 'Menu'])
+    _menu.append_menu_map('General', ['Interact', 'Move', 'Menu']) 
+    _menu.append_menu_map('Interact', ['Workshop', 'Stables', 'House', 'Neighborhood', 'Back'])
+    _menu.append_menu_map('Workshop', ['Work on Toys', 'Leave Toys Broken'])
+    _menu.append_menu_map('Stables', ['Raisin Cookie', 'Chocolate Chip Cookie'])
+    _menu.append_menu_map('House', ['Hot Chocolate', ''])
     _menu.append_menu_map('Menu', ['Back'])
     _menu.append_menu_map('Move', ['Workshop', 'Stables', 'Kitchen', 'House', 'Neighborhood', 'Back'])
     _menu.set_menu('Title')
     return _window, _menu, _scenes, _scenes_map
 
 class Snowflake:
+    # Name: __init__
+    # Parameters: x, y, window
+    # Return: None
+    # Description: Constructor for Snowflake class
     def __init__(self, x, y, window):
         self.x = x
         self.y = y
         self.char = '*'
         self.window = window
 
+    # Name: draw
+    # Parameters: stdscr
+    # Return: None
+    # Description: Draws the snowflake
     def draw(self, stdscr):
         stdscr.addstr(self.y, self.x, self.char)
 
+    # Name: fall
+    # Parameters: None
+    # Return: None
+    # Description: Makes the snowflake fall
     def fall(self):
         self.y += 1
         if self.y == self.window.get_max_height():
             self.y = 0
         self.at_bottom()
 
+    # Name: at_bottom
+    # Parameters: None
+    # Return: None
+    # Description: Moves the snowflake to the top if it reaches the bottom
     def at_bottom(self):
         self.x = random.randint(0, self.window.get_max_width() - 2)
 

@@ -160,6 +160,50 @@ class Scene:
         self.__x = 4 * self.__window.per_width
         self.__y = 1
 
+class Cutscene(Scene):
+    # Name: __init__
+    # Parameters: self, (string) name, (window.Window) window, (list) entities
+    # Return: None
+    # Description: Constructor for the scene object
+    def __init__(self, name, window, entity_list, show_entities=False, text = [""], text_align="left"):
+        super().__init__(name, window, entity_list, show_entities, text, text_align)
+
+    # Name: draw
+    # Parameters: self, (curses.window) stdscr
+    # Return: None
+    # Description: Draws the scene
+    def draw(self, stdscr):
+        super().draw(stdscr)
+        self.draw_text(stdscr)
+
+    def update_event_flag(self):
+        super().update_event_flag()
+        if self.__event_flag == len(self.__text):
+            self.__event_flag = len(self.__text) - 1
+            self.__window.set_scene("Menu")
+
+    def update_event_flag_to_end(self):
+        self.__event_flag = len(self.__text) - 1
+
+    def update_event_flag_to(self, flag):
+        self.__event_flag = flag
+
+class QuestionScene(Scene):
+    # Name: __init__
+    # Parameters: self, (string) name, (window.Window) window, (list) entities
+    # Return: None
+    # Description: Constructor for the scene object
+    def __init__(self, name, window, entity_list, show_entities=False, text = [""], text_align="left"):
+        super().__init__(name, window, entity_list, show_entities, text, text_align)
+
+    # Name: draw
+    # Parameters: self, (curses.window) stdscr
+    # Return: None
+    # Description: Draws the scene
+    def draw(self, stdscr):
+        super().draw(stdscr)
+        self.draw_text(stdscr)
+
 class TitleScene(Scene):
     # Name: __init__
     # Parameters: self, (string) name, (window.Window) window, (string) title, (Entity[]) entities
