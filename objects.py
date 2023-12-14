@@ -76,7 +76,7 @@ But depending on what you do, you may end up on the naughty or nice list."
 What would you like to do?
         """,
         """
-Elf: "Thank you for helping us!
+Elf: "Thank you for chosing to help us!
 We need the toys to be fixed before Christmas and the evil Krampus
 to be defeated before he ruins Christmas!
 Look around the North Pole to fix the toys and to do other tasks!"
