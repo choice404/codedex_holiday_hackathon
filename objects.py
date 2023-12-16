@@ -34,9 +34,9 @@ _________ .__          .__          __
         """
 Christmas is in Danger!!!
 
-Toys have been destroyed by the evil Krampus and scattered across the North Pole!
+Toys have been destroyed by the evil Polar Bear Herbert!
 It's up to you to go on an adventure to work on these toys and accomplish other things along the way!
-But depending on what you do, you may end up on the naught or nice list.
+But depending on what you do, you may end up on the naughty or nice list.
 
 To Play:
 Use the left and right arrow keys to navigate the menu.
@@ -60,9 +60,10 @@ Yaz
         """],
         text_align="center"),
         scenes.Scene("Menu", _window, [], text =
-        ["""
-        """],
-        ),
+        [
+        """
+        """
+        ]),
         scenes.Scene("Start", _window, [], text = [
         """
 You wake up in the snow in the North Pole.
