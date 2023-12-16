@@ -1,4 +1,4 @@
-# CODEDEX HOLIDAY HACKATHON
+# CODÉDEX HOLIDAY HACKATHON
 
 ![Title Screen](./readme_assets/title_screen.gif)
 
@@ -6,17 +6,15 @@
 * [Project description](#project-description)
 * [Install program](#install-program)
 
-##   Project description
+## Project description
 
-Project for the Codedex Holiday Hackathon by faLALALA!!!
+Project for the Codédex Holiday Hackathon by faLALALA!!!
 
 Members:
 
-Austin
-
-Hannah
-
-Yaz
+- Austin
+- Hannah
+- Yaz
 
 This program is under the GNU General Public License v3.0
 
